@@ -107,9 +107,9 @@
 
         async function predict() {
             var dic_class2information = {};
-            dic_class2information['김채원'] = '소스뮤직엔터테인먼트 소속 12인조 그룹  IZ*ONE의 멤버 리더';
-            dic_class2information['사쿠라'] = '소스뮤직엔터테인먼트 소속 12인조 그룹  IZ*ONE의 멤버';
-            dic_class2information['최예나'] = '소스뮤직엔터테인먼트 소속 12인조 그룹  IZ*ONE의 멤버';
+            dic_class2information['김채원'] = ' IZ*ONE의 멤버 리더';
+            dic_class2information['사쿠라'] = ' IZ*ONE의 멤버 보컬';
+            dic_class2information['최예나'] = ' IZ*ONE의 멤버 댄서';
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
